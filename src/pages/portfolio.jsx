@@ -6,7 +6,7 @@ const Portfolio = () => {
     <>
       <img 
         src="/img/banner.jpg" 
-        alt="Bannière de portfolio" 
+        alt="Bannière" 
         className="banner"
       />
 
