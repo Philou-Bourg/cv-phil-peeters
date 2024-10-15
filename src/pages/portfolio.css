@@ -1,0 +1,134 @@
+/* portfolio.css */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+  }
+  
+  h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
+  }
+  
+  .banner {
+    width: 100%;
+    max-height: 15vh;
+    height: 15vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .portfolio-background {
+    background-color: #EEE;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: -20px;
+  }
+  
+  .portfolio-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+
+
+/* Ajout du souligné sous le paragraphe .portfolio-description */
+.portfolio-description::after {
+  content: ''; /* Nécessaire pour créer l'élément */
+  display: block; /* Permet d'occuper une ligne entière */
+  width: 13%; /* Ajuste la largeur du souligné */
+  height: 3px; /* Hauteur de la ligne soulignée */
+  background-color: #0d6efd; /* Couleur de la ligne (bleu) */
+  margin: 10px auto 0; /* Centrer l'élément avec un espacement au-dessus */
+  box-shadow: none; /* Supprime l'ombre bleue */
+}
+
+    
+  .portfolio-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+  .portfolio-card {
+    flex: 1 1 300px;
+    flex-basis: 30%;
+    margin: 0 10px 30px;
+    padding: 0; /* Enlever le padding pour coller l'image */
+    border: 1.5px solid #aaa;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: none; /* Je ne veux pas d'effet d'ombre */
+    transition: box-shadow 0.3s ease; /* Ajoute une transition pour l'effet sur le border */
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+  }
+  
+  .portfolio-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+
+  .portfolio-image {
+    width: 100%; /* Prendre toute la largeur du pavé */
+    height: auto; /* Maintenir le ratio d'aspect */
+    border-top-left-radius: 10px; /* Arrondir le coin supérieur gauche */
+    border-top-right-radius: 10px; /* Arrondir le coin supérieur droit */
+    object-fit: cover; /* Assure que l'image occupe tout le pavé */
+}
+  
+.project-image {
+  width: 100%; /* Ajuster la largeur de l'image */
+  border-radius: 10px; /* Coins arrondis pour l'image */
+}
+
+  .view-link {
+    display: inline-block;
+    margin: 10px auto; /* Centrer le bouton et ajouter une marge verticale */
+    padding: 5px 15px; /* Réduit le padding : 5px en haut/bas, 15px sur les côtés */
+    background-color:white; /* Couleur du bouton */
+    color: #0d6efd; /* Couleur du texte en bleu */
+    text-decoration: none;
+    border-radius: 10px; /* Coins arrondis pour le lien */
+    border: 2px solid #0d6efd; /* Bordure bleue de 2px */
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Ajout d'une transition pour l'effet hover */
+  }
+  
+
+  .view-link:hover {
+    background-color: #0d6efd; /* Changer la couleur de fond en bleu au survol */
+    color: white; /* Changer la couleur du texte en blanc au survol */
+}
+
+.project-description {
+  padding: 10px; /* Ajuste cette valeur selon tes besoins */
+}
+
+  .additional-text {
+    margin-top: 10px;
+    font-size: 0.9rem; /* J'ajuste la taille du texte */
+    color: black; /* Couleur du texte */
+    background-color: rgba(0, 0, 0, 0.05); /* Fond gris clair moins soutenue cohérent avec le background du footer */
+    padding: 5px 10px; /* J'ajoute un peu de padding pour que le texte ne soit pas collé aux bords */
+    border-top: 1.5px solid #ddd; 
+  }
+  
+  /* Responsivité */
+  @media (max-width: 768px) {
+    .portfolio-card {
+      flex-basis: 100%; /* Les cartes occupent toute la largeur */
+      margin: 10px 0; /* Espacement vertical entre les pavés */
+    }
+  
+    h1 {
+      font-size: 1.5rem; /* Ajuster la taille du titre pour les petits écrans */
+    }
+  
+    p {
+      font-size: 0.9rem; /* Ajuster la taille du texte pour les petits écrans */
+    }
+  }
