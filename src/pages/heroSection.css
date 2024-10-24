@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .hero-subtitle {
@@ -50,6 +50,12 @@ h1, h2, h3, h4, h5, h6, strong {
   .hero-subtitle {
     font-size: 1.2rem; /* Ajustement de la taille pour mobile */
   }
+}
+
+/* Conteneur extérieur avec fond gris */
+.about-section-container {
+  background-color: #f0f0f0; /* Gris clair pour l'extérieur */
+  padding: 40px 0; /* Padding autour de la section */
 }
 
 /* Section About */

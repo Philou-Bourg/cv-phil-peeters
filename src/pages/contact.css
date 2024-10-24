@@ -1,0 +1,345 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+  }
+
+/* Conteneur principal avec l'image de fond */
+.contact-container {
+    background-image: url('/img/contact-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: relative; /* J'ajoute pour gérer le positionnement des éléments internes */
+    overflow: hidden; /* Empêche le débordement */
+    padding: 20px; /* Ajout de padding */
+}
+
+
+.contact-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 105, 255, 0.5); /* Bleu transparent */
+    z-index: 1;
+}
+
+
+.contact-content {
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff; /* Fond blanc */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 10px auto; /* Je centre horizontalement */
+    max-height: 95%; /* Limite la hauteur à 95% du conteneur principal */
+    height: auto;
+    width: 100%; /* J'augmente la largeur */
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-top: -50px;
+    overflow: visible
+    
+}
+
+.contact-content h1,
+.contact-content p {
+    margin: 10px 0; /* Ajuste les marges pour réduire l'espace */
+}
+
+.contact-title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-divider {
+    width: 250px;
+    height: 3px;
+    background-color: #0d6efd;
+    margin: 0 auto 30px auto;
+}
+
+.contact-panes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Formulaire de contact */
+.contact-form {
+    width: 48%;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px; 
+    text-align: left;
+}
+
+.form-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #0d6efd;
+    margin: 5px 0 10px 0;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: auto; /* J'ajustement automatique */
+    font-size: 0.9rem; /* Taille de police cohérente */
+    white-space: normal; /* Permet le retour à la ligne */
+    overflow: hidden; /* Empêche le débordement */
+    word-wrap: break-word; /* Permet de couper les mots si nécessaire */
+}
+
+
+.send-btn {
+    background-color: #0d6efd;
+    color: white;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 20px auto; /* Centrer verticalement */
+    width: 80px;
+    height: 25px;
+    display: flex;
+    justify-content: center; /* Centrer le texte */
+    align-items: center; /* Centrer le texte verticalement */
+    font-size: 14px;
+}
+
+.send-btn:hover {
+    background-color: #004bb5;
+}
+
+/* Coordonnées */
+.contact-info {
+  width: 48%;    
+}
+
+.info-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.info-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #0d6efd;
+    margin: 5px 0 10px 0;
+}
+
+.contact-info p {
+    margin-bottom: 0px;
+}
+
+.contact-info iframe {
+    margin-top: 10px; /* Je mets un espace au-dessus de l'iframe */
+    padding-top: 0px; /* Supprime tout padding éventuel */
+    display: block;
+}
+
+
+/* RESPONSIVE */
+
+/* Pour les tablettes (entre 768px et 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .contact-container {
+        height: auto; /* hauteur */
+        padding: 10px; /* Réduit le padding pour un meilleur affichage */
+        padding-top: 30px; /* Donne un peu d'espace en haut */
+    }
+
+    body {
+        padding-top: 60px; /* J'ajuste selon la hauteur du header */
+    }
+
+    .form-title {
+        font-size: 1.2rem; /* J'ajuste la taille du texte pour qu'il ne soit pas tronqué */
+        word-wrap: break-word; /* Je force le texte à revenir à la ligne si nécessaire */
+    }
+
+    /* Ajuste la taille des champs de formulaire */
+    .form-control {
+        width: 100%; /* Les champs occupent toute la largeur */
+        padding: 10px; 
+        margin-bottom: 10px;
+        font-size: 0.9rem; 
+    }
+
+    .name-field,
+    .email-field,
+    .phone-field,
+    .form-control {
+        padding: 10px; /* Je garde le même padding que pour "Votre message" */
+        font-size: 0.9rem;
+    }
+
+    .form-group {
+        padding-left: 5px; /* Légèrement décalé le contenu vers la droite */
+        padding-right: 5px; /* Légèrement décalé le contenu vers la gauche */
+    }
+
+    .contact-content {
+        width: 95%; /* Je réduis la largeur pour mieux m'adapter aux écrans de taille intermédiaire */
+        padding: 10px;
+    }
+
+    .contact-title {
+        font-size: 1.2rem; /* Réduit la taille du titre */
+    }
+
+    .contact-description {
+        font-size: 1rem; /* Réduit la taille de la description */
+    }
+
+    .contact-panes {
+        flex-direction: column; /* Aligne les éléments en colonne */
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%; /* Les pavés prennent toute la largeur */
+        margin-bottom: 20px; /* J'ajoute un espacement entre les sections */
+    }
+
+    ::placeholder {
+        font-size: 0.8rem; /* Je réduis légèrement la taille du texte des placeholders */
+        word-wrap: break-word; /* Permet aux placeholders de revenir à la ligne si nécessaire */
+        white-space: normal; /* Permet le retour à la ligne */
+    }
+
+    .send-btn {
+        padding: 10px; /* J'augmente le padding pour un bouton plus accessible */
+        height: auto;
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        width: 100%; /* L'iframe de la carte Google prend toute la largeur */
+        height: 200px; /* Hauteur ajustée pour les petits écrans */
+    }
+}
+
+
+/* Pour les mobiles (moins de 768px) */
+@media (max-width: 767px) {
+    .contact-container {
+        height: auto; /* Permet de ne pas forcer la hauteur à 100vh */
+        padding: 10px; /* Réduit le padding pour un meilleur affichage */
+        padding-top: 30px; /* Donne un peu d'espace en haut */
+    }
+
+    body {
+        padding-top: 60px; /* J'ajuste selon la hauteur du header */
+    }
+    .form-title {
+        font-size: 1.2rem; /* J'ajuste la taille du texte pour qu'il ne soit pas tronqué */
+        word-wrap: break-word; /* Je force le texte à revenir à la ligne si nécessaire */
+    }
+
+   /* Ajuste la taille des champs de formulaire */
+   
+   .form-control {
+        width: 100%;
+        padding: 10px; 
+        margin-bottom: 10px;
+        font-size: 0.9rem; 
+   }
+
+    .name-field,
+    .email-field,
+    .phone-field,
+    .form-control {
+        padding: 10px; /* Je garde le même padding que pour "Votre message" */
+        font-size: 0.9rem;
+    }
+
+/* Centrage vertical et augmentation de l'encadrement pour .phone-field et .email-field,*/
+    .phone-field,  
+    .email-field {
+        line-height: 110px; /* Ajuste la hauteur de ligne pour centrer verticalement */      
+    }
+
+    .name-field {
+    line-height: 50px; /* Ajuste la hauteur de ligne pour centrer verticalement */      
+}
+
+
+
+   .form-group {
+        padding-left: 5px; /* Légèrement décaler le contenu vers la droite */
+        padding-right: 5px; /* Légèrement décaler le contenu vers la gauche */
+    }
+
+
+    .contact-content {
+        width: 95%; /* Réduit la largeur pour mieux s'adapter aux petits écrans */
+        padding: 10px;
+    }
+
+    .contact-title {
+        font-size: 1.2rem; /* Réduit la taille du titre */
+    }
+
+    .contact-description {
+        font-size: 1rem; /* Réduit la taille de la description */
+    }
+
+    .contact-panes {
+        flex-direction: column; /* Aligne les éléments en colonne */
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%; /* Les pavés prennent toute la largeur */
+        margin-bottom: 20px; /* J'ajoute un espacement entre les sections */
+    }
+
+    ::placeholder {
+        font-size: 0.8rem; /* Réduit légèrement la taille du texte des placeholders */
+        word-wrap: break-word; /* Permet aux placeholders de revenir à la ligne si nécessaire */
+        white-space: normal; /* Permet le retour à la ligne */
+    }
+
+    
+
+
+    .send-btn {
+        padding: 10px; /* J'augmente le padding pour un bouton plus accessible */
+        height: auto;
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        width: 100%; /* L'iframe de la carte Google prend toute la largeur */
+        height: 200px; /* Hauteur ajustée pour les petits écrans */
+    }
+}

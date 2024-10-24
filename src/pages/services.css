@@ -21,14 +21,14 @@ body {
  /* Pour les tablettes */
 @media (max-width: 1024px) {                                                                                                                                                                                          
     .banner {
-      content: url('/public/img/banner-tablette.jpg'); /* Chemin depuis le dossier public */
+      content: url('/img/banner-tablette.jpg'); /* Chemin depuis le dossier public */
     }
   }
   
   /* Pour les mobiles */
   @media (max-width: 768px) {
     .banner {
-      content: url('/public/img/banner-mobile.jpg'); /* Chemin depuis le dossier public */
+      content: url('/img/banner-mobile.jpg'); /* Chemin depuis le dossier public */
     }
   }
 
@@ -48,7 +48,7 @@ body {
   p {
     font-size: 0.9 rem; /* Réduction de la taille du texte pour les petits écrans */
     overflow: hidden; /* Masquer le texte qui déborde */
-    text-overflow: ellipsis; /* Ajouter "..." si le texte déborde */
+    text-overflow: ellipsis; /* J'ajoute en cas de débordement du texte */
     white-space: normal; /* Permet le retour à la ligne si nécessaire */
   }
   
@@ -65,8 +65,8 @@ body {
     font-size: 2rem;
     margin-bottom: 10px;
     overflow-wrap: break-word; /* Permet de couper les mots longs pour qu'ils s'ajustent */
-    hyphens: auto; /* Permet aux mots d'être coupés avec des tirets si nécessaire */
     -webkit-hyphens: auto; /* Support pour Safari */
+    hyphens: auto; /* Permet aux mots d'être coupés avec des tirets si nécessaire */
     white-space: normal; /* Permet les retours à la ligne */
   } 
 
@@ -144,6 +144,7 @@ body {
 
 
 .service-logo:hover {
+  color: #cde1f8;
   transform: scale(1.1); /* Augmente légèrement la taille au survol */
 }
 
@@ -154,8 +155,8 @@ h2 {
   margin-bottom: 5px; /* Permet d'ajuster la marge pour uniformiser l'espacement */
   min-height: 60px; /* Hauteur minimale pour aligner les titres */
   overflow-wrap: break-word; /* Permet de couper les mots longs pour qu'ils s'ajustent */
-  hyphens: auto; /* Permet aux mots d'être coupés avec des tirets si nécessaire */
   -webkit-hyphens: auto; /* Support pour Safari */
+  hyphens: auto; /* Permet aux mots d'être coupés avec des tirets si nécessaire */
   white-space: normal; /* Permet les retours à la ligne */
   display: flex;
   align-items: center; /* Centrer verticalement */
@@ -167,8 +168,8 @@ h2 {
   color: #444; /* Couleur du texte */
   text-align: center; /* Permet de justifier le texte */
   overflow-wrap: break-word; /* Permet de couper les mots longs pour qu'ils s'ajustent */
-  hyphens: auto; /* Permet aux mots d'être coupés avec des tirets si nécessaire */
   -webkit-hyphens: auto; /* Support pour Safari */
+  hyphens: auto; /* Permet aux mots d'être coupés avec des tirets si nécessaire */
   white-space: normal; /* Permet les retours à la ligne */
   margin-bottom: 0; /* Permet d'ajuster la marge pour uniformiser l'espacement */
   margin-top: 0px; /* S'assurer que le texte démarre après le titre */
@@ -178,8 +179,8 @@ h2 {
   p {
     color: #444; /* Couleur du texte */
     overflow-wrap: break-word; /* Permet de couper les mots longs pour qu'ils s'ajustent */
-    hyphens: auto; /* Permet aux mots d'être coupés avec des tirets si nécessaire */
     -webkit-hyphens: auto; /* Support pour Safari */
+    hyphens: auto; /* Permet aux mots d'être coupés avec des tirets si nécessaire */
     white-space: normal; /* Permet les retours à la ligne */
     margin-bottom: 0; /* Permet d'ajuster la marge pour uniformiser l'espacement */
     margin-top: 0px; /* S'assurer que le texte démarre après le titre */
@@ -209,16 +210,21 @@ p em {
 
 /* Premier et deuxieme logo - Écran d'ordinateur rempli */
 
-.inverted-colors-screen {
-  background-color: white;
-  padding: 20px;
-  display: inline-block;
+
+  
+  .inverted-colors-screen {
+    color: #0d6efd;
+    font-size: 3rem;
   }
   
-.inverted-colors-screen i {
-  color: #0d6efd;
-  font-size: 3rem;
-}
-
-/* Deuxieme logo - Écran d'ordinateur rempli */
-
+  
+  .service-logo:hover .icon-hover {
+    color: #cde1f8; /* Changer la couleur au survol */
+    transform: scale(1.1); /* Augmente légèrement la taille au survol */
+  }
+  
+  
+  .blue-background {
+    color: #0d6efd;
+    font-size: 3rem;
+  }

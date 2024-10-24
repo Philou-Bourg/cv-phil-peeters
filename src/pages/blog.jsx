@@ -13,7 +13,7 @@ const Blog = () => {
 
       <div className="blog-background">
         <div className="container blog-section">
-          <h1>MON BLOG</h1>
+          <h1>BLOG</h1>
           <p id="blog-description" className="blog-description" >
             Découvrez mes articles sur le développement web.
           </p>
@@ -27,9 +27,9 @@ const Blog = () => {
                 <p className="blog-description">
                   Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
-                <a href="/article-1" className="view-link">Lire la suite</a>
-                <p className="additional-text">Publié le 22 août 2022</p>
+                <a href="/coder-html-css" className="view-link">Lire la suite</a>              
               </div>
+              <p className="additional-text">Publié le 22 août 2022</p>
             </div>
 
             {/* Deuxième pavé */}
@@ -40,9 +40,9 @@ const Blog = () => {
                 <p className="blog-description">
                   Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
-                <a href="/article-1" className="view-link">Lire la suite</a>
-                <p className="additional-text">Publié le 20 août 2022</p>
+                <a href="/vendre-web" className="view-link">Lire la suite</a>                
               </div>
+              <p className="additional-text">Publié le 20 août 2022</p>
             </div>
 
             {/* Troisième pavé */}
@@ -53,9 +53,9 @@ const Blog = () => {
                 <p className="blog-description">
                 Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
-                <a href="/article-1" className="view-link">Lire la suite</a>
-                <p className="additional-text">Publié le 1 août 2022</p>
+                <a href="/google" className="view-link">Lire la suite</a>                
               </div>
+              <p className="additional-text">Publié le 1 août 2022</p>
             </div>
 
             {/* Quatrième pavé */}
@@ -67,8 +67,8 @@ const Blog = () => {
                 Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
                 <a href="/article-1" className="view-link">Lire la suite</a>
-                <p className="additional-text">Publié le 31 juillet 2022</p>
               </div>
+              <p className="additional-text">Publié le 31 juillet 2022</p>
             </div>
 
             {/* Cinquième pavé */}
@@ -80,8 +80,8 @@ const Blog = () => {
                 Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
                 <a href="/article-1" className="view-link">Lire la suite</a>
-                <p className="additional-text">Publié le 30 juillet 2022</p>
               </div>
+              <p className="additional-text">Publié le 30 juillet 2022</p>
             </div>
 
             {/* Sixième pavé */}
@@ -93,8 +93,8 @@ const Blog = () => {
                 Some quick example text to build on the card title and make up the bulk of the card's content.
                 </p>
                 <a href="/article-1" className="view-link">Lire la suite</a>
-                <p className="additional-text">Publié le 12 juillet 2022</p>
               </div>
+              <p className="additional-text">Publié le 12 juillet 2022</p>
             </div>
           </div>
         </div>

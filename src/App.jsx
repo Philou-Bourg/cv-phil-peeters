@@ -11,7 +11,9 @@ import Footer from './components/footer';  // Import du composant Footer
 import FreshFoodImage from './pages/fresh-food-image'; // Importer FreshFoodImage
 import RestoJapImage from './pages/resto-jap-image'; // Importer RestoJapImage
 import EspacesBienEtreImage from './pages/espace-bien-etre-image'; // Importer EspacesBienEtreImage
-
+import CoderHtmlCss from './pages/coder-html-css'; // Importer CoderHtmlCss
+import VendreWeb from './pages/vendre-web'; // Importer VendreWeb
+import Google from './pages/google'; // Importer Google
 function App() {
   return (
     <Router>
@@ -27,6 +29,9 @@ function App() {
         <Route path="/fresh-food-image" element={<FreshFoodImage />} />
         <Route path="/resto-jap-image" element={<RestoJapImage />} />
         <Route path="/espace-bien-etre-image" element={<EspacesBienEtreImage />} />
+        <Route path="/coder-html-css" element={<CoderHtmlCss/>} />
+        <Route path="/vendre-web" element={<VendreWeb/>} />
+        <Route path="/google" element={<Google/>} />
       </Routes>
       <Footer />
       </div>

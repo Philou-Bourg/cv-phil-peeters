@@ -29,8 +29,8 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 
 .blog-section h1 {
-    margin-top: 0px; /* Ajuster la marge supérieure selon vos besoins */
-    margin-bottom: 10px; /* Ajuster la marge inférieure selon vos besoins */
+    margin-top: 0px; /* Marge supérieure */
+    margin-bottom: 10px; /* Marge inférieure */
 }
 
 
@@ -63,7 +63,7 @@ h2 {
     border: 1.5px solid #aaa;
     border-radius: 10px;
     background-color: #fff;
-    text-align: left; /* Aligner le texte à gauche */
+    text-align: left; /* Texte à gauche */
     display: flex;
     flex-direction: column; 
     justify-content: space-between;
@@ -119,12 +119,11 @@ h2 {
 }
 
 .additional-text {
-    margin-top: 10px;
     font-size: 0.9rem; 
     color: black; 
-    background-color: rgba(0, 0, 0, 0.05); 
-    padding: 5px 10px; 
+    background-color: rgba(0, 0, 0, 0.05);
     border-top: 1.5px solid #ddd; 
+    padding: 5px 10px ; /* Ajout de padding pour de l'espace autour du texte */
 }
 
 /* Responsivité */
@@ -132,5 +131,16 @@ h2 {
     .blog-card {
         flex-basis: 100%; 
         margin: 10px 0; 
+    }
+    .view-link {
+        padding: 0.4em 0.8em;  /* Réduction proportionnelle des marges internes */
+        font-size: 0.9rem;  /* Taille de texte légèrement réduite */
+    }
+}
+
+@media (max-width: 480px) {
+    .view-link {
+        padding: 0.3em 0.6em;  /* Encore plus petit pour les très petits écrans */
+        font-size: 0.8rem;  /* Taille du texte encore réduite */
     }
 }

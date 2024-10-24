@@ -85,12 +85,12 @@ body {
   border-radius: 10px; /* Coins arrondis pour l'image */
 }
 
-  .view-link {
+.portfolio-section .view-link {
     display: inline-block;
     margin: 10px auto; /* Centrer le bouton et ajouter une marge verticale */
     padding: 5px 15px; /* Réduit le padding : 5px en haut/bas, 15px sur les côtés */
-    background-color:white; /* Couleur du bouton */
-    color: #0d6efd; /* Couleur du texte en bleu */
+    background-color: White; /* Couleur du bouton */
+    color:  #0d6efd; /* Couleur du texte en bleu */
     text-decoration: none;
     border-radius: 10px; /* Coins arrondis pour le lien */
     border: 2px solid #0d6efd; /* Bordure bleue de 2px */
@@ -99,8 +99,8 @@ body {
   }
   
 
-  .view-link:hover {
-    background-color: #0d6efd; /* Changer la couleur de fond en bleu au survol */
+  .portfolio-section .view-link:hover {
+    background-color:#0d6efd; /* Changer la couleur de fond en bleu au survol */
     color: white; /* Changer la couleur du texte en blanc au survol */
 }
 

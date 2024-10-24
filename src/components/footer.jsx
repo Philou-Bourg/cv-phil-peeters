@@ -42,6 +42,7 @@ const Footer = () => {
               >
                 <i className="fab fa-github"></i>
               </a>
+              
               <a
                 href="https://twitter.com/johndoe"
                 target="_blank"
@@ -99,9 +100,9 @@ const Footer = () => {
           <div className="col-md-3">
             <h5>Mes derniers articles</h5>
             <ul className="list-unstyled">
-              <li><Link to="/blog/article1" className="custom-link">Coder son site en HTML/CSS</Link></li>
-              <li><Link to="/blog/article2" className="custom-link">Vendre ses produits sur le web</Link></li>
-              <li><Link to="/blog/article3" className="custom-link">Se positionner sur Google</Link></li>
+              <li><Link to="/coder-html-css" className="custom-link">Coder son site en HTML/CSS</Link></li>
+              <li><Link to="/vendre-web" className="custom-link">Vendre ses produits sur le web</Link></li>
+              <li><Link to="/google" className="custom-link">Se positionner sur Google</Link></li>
             </ul>
           </div>
         </div>
@@ -117,10 +118,10 @@ const Footer = () => {
           <button
             onClick={scrollToTop}
             className="btn"
-            style={{ backgroundColor: '#298eff', color: '#fff' }}
+            style={{ backgroundColor: '#298eff', color: '#fff', marginTop: '5px' }}
             aria-label="Retour en haut de la page"
           >
-            Retour en haut
+            Retour en haut  
           </button>
         )}
       </div>
@@ -140,14 +141,16 @@ const Footer = () => {
           position: absolute;
           left: 0;
           color: #0d6efd; /* Le symbole > en #0d6efd */
-          font-weight: 900; /* Mettre le symbole > en gras */
-          font-size: 1.5em; /* Augmenter la taille du symbole */
-          transform: translateY(-0.30em); /* J'ajuste la position verticale du symbole */
+          font-weight: 600; /* Mettre le symbole > en gras */
+          font-size: 1 em; /* Augmenter la taille du symbole */
+          transform: translateY(-0.10em); /* J'ajuste la position verticale du symbole */
           text-shadow: 0.5px 0.5px 0 #0d6efd, -0.5px -0.5px 0 #0d6efd; /* Ombre en bleu clair */
         }
 
         .custom-link:hover {
           text-decoration: underline;
+          background-color: rgba(255, 255, 255, 0.8); /* Blanc avec transparence au survol */
+          color: #000; /* Couleur du texte au survol */
         }
 
         .social-icon {

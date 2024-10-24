@@ -1,0 +1,28 @@
+.legal-title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}   
+
+.legal-title::after {
+    content: ''; /* Nécessaire pour créer l'élément */
+    display: block; /* Permet d'occuper une ligne entière */
+    width: 13%; /* (13% de la largeur du parent) */
+    height: 3px; /* Hauteur de l'élément */
+    background-color: #0d6efd; /* Couleur de fond */
+    margin: 10px auto 0; /* Centrer l'élément et ajouter un espace au-dessus */
+    box-shadow: none; /* Supprime l'ombre bleue */
+}
+
+.accordion-header {
+    background-color: #0d6efd; /* Fond bleu */
+    color: black; /* Texte noir */
+  }
+  
+  .accordion-header:hover {
+    color: #003366; /* Texte bleu foncé au survol */
+  }
+  
+  .accordion-header span {
+    font-weight: bold;
+    text-transform: uppercase;
+  }

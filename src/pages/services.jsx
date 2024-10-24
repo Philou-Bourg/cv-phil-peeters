@@ -23,7 +23,7 @@ const Services = () => {
             {/* Premier pavé */}
             <div className="col-md-4 service-card">
               <div className="service-logo inverted-colors-screen">
-                <MDBIcon fas icon="desktop" style={{ color: '#0d6efd', fontSize: '3rem' }} />
+                <MDBIcon className="icon-hover" fas icon="desktop" />
               </div>
               <h2>UX DESIGN</h2>
               <p>
@@ -33,8 +33,8 @@ const Services = () => {
 
             {/* Deuxième pavé */}
             <div className="col-md-4 service-card">
-              <div className="service-logo">
-                <MDBIcon fas icon="file-code" style={{ color: '#0d6efd', fontSize: '3rem' }} />
+              <div className="service-logo blue-background">
+                <MDBIcon className="icon-hover" fas icon="file-code"/>
               </div>
               <h2>DÉVELOPPEMENT WEB</h2>
               <p>
@@ -44,8 +44,8 @@ const Services = () => {
 
             {/* Troisième pavé */}
             <div className="col-md-4 service-card">
-              <div className="service-logo">
-                <MDBIcon fas icon="search-dollar" style={{ color: '#0d6efd', fontSize: '3rem' }}  />
+              <div className="service-logo blue-background">
+              <MDBIcon className="icon-hover" fas icon="search-dollar" />
               </div>
               <h2>RÉFÉRENCEMENT</h2>
               <p>

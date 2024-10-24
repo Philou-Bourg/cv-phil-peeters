@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './navbar.css';
 
 const Navbar = () => {
   return (
@@ -58,14 +59,6 @@ const Navbar = () => {
                 to="/contact"
               >
                 Me contacter
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className={({ isActive }) => `nav-link text-uppercase ${isActive ? 'active' : ''}`}
-                to="/legal"
-              >
-                Mentions légales
               </NavLink>
             </li>
           </ul>
