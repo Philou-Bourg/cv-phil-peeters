@@ -28,7 +28,7 @@ Ce projet démontre ma capacité à créer une application web interactive en in
 ## Processus de Déploiement
 1. Développement de l'application sur mon ordinateur personnel.
 2. Tests locaux avec [Vite] http://localhost:5173/
-3. Publication de l'application sur AlwaysData.
+3. Publication de l'application sur https://codesandbox.io/p/github/Philou-Bourg/cv-phil-peeters/main?import=true
 4. Configuration des outils de référencement pour assurer la visibilité du site sur les moteurs de recherche.
 
 
