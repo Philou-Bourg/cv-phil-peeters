@@ -1,28 +1,77 @@
-.legal-title {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}   
-
-.legal-title::after {
-    content: ''; /* Nécessaire pour créer l'élément */
-    display: block; /* Permet d'occuper une ligne entière */
-    width: 13%; /* (13% de la largeur du parent) */
-    height: 3px; /* Hauteur de l'élément */
-    background-color: #0d6efd; /* Couleur de fond */
-    margin: 10px auto 0; /* Centrer l'élément et ajouter un espace au-dessus */
-    box-shadow: none; /* Supprime l'ombre bleue */
+.ensemble {
+  margin-top: -50px !important; /* Aucune marge au-dessus */
+  background-color: #EEE; /* Couleur grise */
+  padding-top: 15px;
+  padding-bottom: 20px; /* Ajuste la valeur selon tes besoins */
 }
 
+.legal-title {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.legal-title::after {
+  content: ''; /* Nécessaire pour créer l'élément */
+  display: block; /* Permet d'occuper une ligne entière */
+  width: 13%; /* (13% de la largeur du parent) */
+  height: 3px; /* Hauteur de l'élément */
+  background-color: #0d6efd; /* Couleur de fond */
+  margin: 10px auto 0; /* Centrer l'élément et ajouter un espace au-dessus */
+  box-shadow: none; /* Supprime l'ombre bleue */
+}
+
+/* Couleur du texte des menus */
 .accordion-header {
-    background-color: #0d6efd; /* Fond bleu */
-    color: black; /* Texte noir */
+  background-color: #f8f9fa; /* Fond gris très clair */
+  border-bottom: 1px solid #ccc; /* Bordure inférieure grise clair pour séparer les éléments */
+}
+
+/* Couleur du texte des menus */
+.accordion-header span {
+  font-weight: 500; /* Moins gras */
+}
+
+/* Au survol de l'en-tête de l'accordéon */
+.accordion-header:hover {
+  color: #0d6efd; /* Texte bleu au survol */
+  border: 1px solid #0d6efd; /* Bordure bleue soutenue au survol */
+  background-color: #e6f0ff; /* Fond bleu clair au survol */
+}
+
+/* Au survol de l'en-tête titre menu de l'accordéon */
+.accordion-header:hover span {
+  color: #0d6efd; /* Texte bleu au survol */
+}
+
+/* Style par défaut des accordéons */
+.accordion-item {
+  border: 0px solid #ccc; /* Un gris plus soutenu que le fond */
+  border-radius: 5px; /* Coins légèrement arrondis */
+  transition: all 0.3s ease-in-out; /* Transition fluide pour les changements */
+}
+
+/* Style pour le titre de l'accordéon lorsque l'élément est ouvert */
+.accordion-header.show span {
+  color: #0d6efd !important; /* Couleur bleue lorsque l'accordéon est ouvert */
   }
-  
-  .accordion-header:hover {
-    color: #003366; /* Texte bleu foncé au survol */
-  }
-  
-  .accordion-header span {
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+
+
+/* Lorsque l'accordéon est actif */
+.accordion-item.show {
+  border-color: #0d6efd; /* Bordure bleue lors de l'ouverture */
+  font-weight: bold; /* Mettre le texte en gras */
+}
+
+.accordion-header:focus,
+.accordion-header:active {
+  background-color: #e6f0ff; /* Couleur de fond souhaitée lors du clic */
+  color: #0d6efd; /* Couleur de texte souhaitée lors du clic */
+}
+
+
+/* Style du corps des accordéons */
+.accordion-body {
+  border-top: 1px solid #ccc; /* Gris soutenu */
+  padding: 10px;
+  background-color: #f9f9f9; /* Fond légèrement plus clair */
+}

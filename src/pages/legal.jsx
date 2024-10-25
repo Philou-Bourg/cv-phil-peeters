@@ -8,6 +8,7 @@ import './legal.css';
 const Legal = () => {
   return (
     <>
+    <div className="ensemble">
       {/* Meta tag pour désactiver l'indexation */} 
       <Helmet>
         <meta name="robots" content="noindex, nofollow" />
@@ -60,6 +61,7 @@ const Legal = () => {
           </Accordion.Item>
         </Accordion>
       </div>
+    </div>  
     </>
   );
 };
