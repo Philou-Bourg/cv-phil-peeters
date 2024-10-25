@@ -17,7 +17,7 @@ Ce projet démontre ma capacité à créer une application web interactive en in
 - Interactivité via des scripts événementiels.
 - Interface utilisateur réactive développée avec Bootstrap.
 - Pages web optimisées pour le référencement naturel.
-- Accessibilité publique via Always Data.
+- Accessibilité publique via CodeSandbox.
 
 ## Technologies Utilisées
 
