@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6, strong {
 /* Changer l'image de la section "À propos" pour les écrans mobiles */
 @media (max-width: 576px) {
   .about-section img {
-    content: url('/img/about.jpg'); /* Chemin vers la nouvelle image pour mobile */
+    content: url('/img/philippe.jpg'); /* Chemin vers la nouvelle image pour mobile */
     width: 100%; /* Ajuster la largeur de l'image pour les mobiles */
     height: auto;
   }

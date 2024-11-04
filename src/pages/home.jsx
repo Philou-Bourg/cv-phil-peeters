@@ -73,7 +73,7 @@ const Home = () => {
 
            {/* Partie droite : Image */}
             <div className="col-md-6">
-              <img src="/img/john-doe-about.jpg" alt="John Doe" className="img-fluid mx-auto d-block" />
+              <img src="/img/philippe.jpg" alt="Philippe Peeters" className="img-fluid mx-auto d-block" />
               {/* Barre de compétences */}
               <div className="skills">
                 <h5>Mes compétences</h5>
